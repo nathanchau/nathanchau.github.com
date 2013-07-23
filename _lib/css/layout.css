@@ -1,0 +1,185 @@
+
+body{
+margin: 0;
+padding: 0;
+border: 0;
+overflow: hidden;
+height: 100%;
+max-height: 100%; 
+}
+
+#framecontent{
+position: fixed;
+top: 0;
+bottom: 0; 
+left: 0;
+height: 100%;
+overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+}
+
+#body{
+position: left;
+top: 0; 
+left: 200px; /*Set left value to WidthOfFrameDiv*/
+right: 0;
+bottom: 0;
+overflow: auto; 
+background: #111;
+}
+
+.innertube{
+margin: 15px; /*Margins for inner DIV inside each DIV (to provide padding)*/
+}
+
+* html body{ /*IE6 hack*/
+padding: 0 0 0 200px; /*Set value to (0 0 0 WidthOfFrameDiv)*/
+}
+
+* html #maincontent{ /*IE6 hack*/
+height: 100%; 
+width: 100%; 
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+ul, li, ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+input, textarea {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: none;
+}
+
+
+#content-wrapper {
+	position: absolute;
+	top: 18px;
+	left: 150px;
+	visibility: hidden;
+	width: 200px;
+}
+
+#content-left {
+	float: left;
+	width: 287px;
+	margin-right: 10px;
+}
+
+#content-right {
+	position: absolute;
+	left: 490px;
+	display: none;
+}
+
+#content ul li {
+	display: inline;
+}
+
+.menu-content {
+	display: none;
+}
+
+.menu-list {
+	width: 100%;
+}
+
+.submenu {
+	display: none;
+	margin-left: 12px;
+}
+
+.subsection {
+	display: none;
+	margin-left: 24px;
+}
+
+.subitem {
+	margin-left: 12px;
+	display: none;
+}
+
+.nodisplay {
+	display: none;
+}
+
+
+
+
+#emailform ul li {
+	padding-bottom: 10px;
+}
+
+
+
+
+#imgs-wrapper {
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 395px;
+	height: 296px;
+	overflow: hidden;
+}
+#imgs {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#loadingGallery {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 395px;
+	height: 296px;
+	background-color: white;
+}
+
+#gallery-content {
+	width: 460px;
+}
+
+#gallery-wrapper {
+	float: left;
+	clear: left;
+}
+
+#gallery-captions-wrapper {
+	float: left;
+	clear: left;
+}
+
+#gallery-captions {
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 460px;
+}
+
+#gallery-captions div.caption {
+	position: absolute;
+	left: 0;
+	top: 0;
+	visibility: hidden;
+}
+
+#gallery-controller {
+	float: left;
+	clear: left;
+}

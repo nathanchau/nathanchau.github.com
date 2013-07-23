@@ -1,0 +1,134 @@
+
+body {
+	font-family: monaco, courier, monospace;
+	font-size: 9px;
+	line-height: 11px;
+	color: BLACK;
+}
+
+
+* html body {
+	font-family: monospace;
+	font-size: 11px;
+}
+
+input, textarea {
+	font-family: verdana, geneva, arial, helvetica, sans-serif;
+	font-size: 9px;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: GREY;
+	background-color: #99999;
+	text-decoration: none;
+}
+
+
+
+
+.note, a.note {
+	color: black;
+}
+
+a.note:hover {
+	color: white;
+	background-color: #333333;
+	text-decoration: none;
+}
+
+.indent {
+	padding-left: 10px;
+}
+
+a.selected {
+	color: white;
+	background-color: BLACK;
+	text-decoration: none;
+	display: block;
+}
+
+a.selected:hover {
+	color: white;
+	background-color: BLACK;
+	text-decoration: none;
+}
+
+a.notSelected {
+	color: GREY;
+	text-decoration: none;
+	display: block;
+}
+
+a.notSelected:hover {
+	color: white;
+	text-decoration: none;
+	background-color: black;
+}
+
+.green {
+	color:#B6BE35;
+}
+
+.grey {
+	color:#666666;
+}
+
+.grey1 {
+	color:#FF0000;
+}
+
+.blue {
+	color: #97D3E4;
+}
+
+.orange {
+	color: #EC9130;
+}
+
+.white {
+	color:white;
+}
+
+.sub1 {
+	color:#D85830;
+}
+.sub4 {
+	color:#75B8C3;
+}
+
+.sub2 {
+	color:#CD3528;
+}
+
+.sub3 {
+	color: #A32729;
+}
+
+.subHOLD {
+	color:#FF0663;
+}
+
+
+
+.blocked {
+	color: #CCCCCC;
+	background-color: BLACK;
+	display: block;
+}
+
+.blocked2 {
+	color: white;
+	background-color: #000000;
+	display: block;
+}
+
+a.reel:hover {
+	color: white;
+	text-decoration: none;
+	background-color: white;
+}
