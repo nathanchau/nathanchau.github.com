@@ -1,0 +1,671 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The Hackathon Project by Nathan Chau</title>
+	<meta name="title" content="The Hackathon Project by Nathan Chau" />
+	<meta name="description" content="A collection of my hackathon projects, including HackMIT, MasterCard N>XT, and The Next 36" />
+	<link rel="image_src" href="end-hero1.png" />
+
+	<meta content="http://www.nathanchau.com/hackathon/index.html" property="og:url" />
+	<meta content="http://www.nathanchau.com/hackathon/end-hero1.png" property="og:image" />
+	<link rel="shortcut icon" id="favicon" href="favicon.ico"> 
+	<meta name="author" content="Nathan Chau">
+	<link rel="canonical" href="http://www.nathanchau.com/hackathon/index.html" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Kaushan+Script:400' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+  <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      background: #E2E4E7;
+      padding: 0;
+      text-align: center;
+      font-family: 'open sans';
+      position: relative;
+      margin: 0;
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    .wrapper {
+    	height: 100% !important;
+    	height: 100%;
+    	margin: 0 auto; 
+    	overflow: hidden;
+    }
+    
+    a {
+      text-decoration: none;
+    }
+    
+    
+    h1, h2 {
+      width: 100%;
+      float: left;
+    }
+    h1 {
+      margin-top: 100px;
+      color: #000;
+      margin-bottom: 5px;
+      font-size: 70px;
+      letter-spacing: -4px;
+      font-weight: 100;
+    }
+    h1 span {
+      font-size: 26px;
+      margin: 0 5px;
+      text-transform: capitalize;
+      background: rgba(0,0,0,0.85);
+      display: inline-block;
+      color: #6D461D;
+      border-radius: 5px 5px;
+      -webkit-border-radius: 5px 5px;
+      -moz-border-radius: 5px 5px;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
+      padding: 3px 10px;
+    }
+    h2 {
+      color: #6D461D;
+      font-weight: 100;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    
+    .pointer {
+      color: #9b59b6;
+      font-family: 'Pacifico', cursive;
+      font-size: 30px;
+      margin-top: 15px;
+    }
+    code {
+      margin: 20px 1%;
+      float: left;
+      width: 48%;
+      height: 105px;
+      background: rgba(0,0,0,0.1);
+      border: rgba(0,0,0,0.05) 5px solid;
+      border-radius: 5px;
+      padding:5px;
+      color: white;
+      text-align: center;
+      font-size: 15px;
+      margin-top: 25px;
+      display: block;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+    }
+    code.html {
+      color: #7EC9E6;
+    }
+    code.js {
+      color: #FFAD00;
+    }
+
+    .main {
+      float: left;
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    .main h1 {
+      padding:150px 50px;
+      float: left;
+      width: 100%;
+      font-size: 45px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      font-weight: 100;
+      color: white;
+      margin: 0;
+    }
+   
+    .main h1.demo1 {
+      background: #1ABC9C;
+    }
+    
+    .reload.bell {
+      font-size: 12px;
+      padding: 20px;
+      width: 45px;
+      text-align: center;
+      height: 47px;
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+    }
+    
+    .reload.bell #notification {
+      font-size: 25px;
+      line-height: 140%;
+    }
+    
+    .reload, .btn{
+      display: inline-block;
+      border: 4px solid #A2261E;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      background: #CC3126;
+      display: inline-block;
+      line-height: 100%;
+      padding: 0.7em;
+      text-decoration: none;
+      color: #fff;
+      width: 100px;
+      line-height: 140%;
+      font-size: 17px;
+      font-family: open sans;
+      font-weight: bold;
+    }
+    .reload:hover{
+      background: #444;
+    }
+    .btn {
+      width: 200px;
+      color: rgb(255, 255, 255);
+      border: 4px solid rgb(0, 0, 0);
+      background: rgba(3, 3, 3, 0.75);
+    }
+    .clear {
+      width: auto;
+    }
+    .btn:hover, .btn:hover {
+      background: #444;
+    }
+    .btns {
+      width: 410px;
+      margin: 50px auto;
+    }
+    .credit {
+      text-align: center;
+      color: rgba(0,0,0,0.5);
+      padding: 10px;
+      width: 410px;
+      clear: both;
+    }
+    .credit a {
+      color: rgba(0,0,0,0.85);
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+    }
+    
+    .back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: left;
+      display: block;
+      padding: 7px;
+      width: 100%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      background: rgba(255, 255, 255, 0.25);
+      font-family: "Montserrat", sans;
+      letter-spacing: -1px;
+      font-weight: bold;
+      font-size: 13px;
+      color: white;
+      -webkit-transition: all 500ms ease-in-out;
+      -moz-transition: all 500ms ease-in-out;
+      -o-transition: all 500ms ease-in-out;
+      transition: all 500ms ease-in-out;
+      font-weight: normal;
+    }
+    .back:hover {
+      color: white;
+      background: rgba(255, 255, 255, 0.5);
+    }
+    
+    header {
+      position: relative;
+      z-index: 10;
+    }
+    .main section .page_container {
+      position: relative;
+      top: 25%;
+      margin: 0 auto 0;
+      max-width: 950px;
+      z-index: 3;
+    }
+    .main section  {
+      overflow: hidden;
+    }
+    
+    .main section > img {
+      position: absolute;
+      max-width: 100%;
+      z-index: 1;
+    }
+    
+    .main section.page1 {
+      background:#f7f7f7;
+    }
+    .main section.page1 h1 {
+      text-align: left;
+      padding: 0;
+      margin-bottom: 15px;
+      font-size: 70px;
+      color: black;
+    }
+    .main section.page1 h2 {
+      color: rgba(0,0,0,0.85);
+      text-align: left;
+      width: 435px;
+      margin-left: 5px;
+      line-height: 160%;
+    }
+   	.main section.page1 > img {
+      position: absolute;
+      top: 0px;
+      right: 50%;
+      margin-right: -50%;
+      width: 50%;
+    }
+    .main section.page1 .credit {
+    	text-align: left;
+    }
+    .main section .page_container .btns {
+      clear: both;
+      float: left;
+      text-align: center;
+      width: 435px;
+    }
+    .main section .page_container .btns a{
+      text-align: center;
+    }
+    .main section.page2 {
+      background: #e54619 url(orange-hero1.png) no-repeat center -150px ;
+      color: rgba(255,255,255,0.85);
+    }
+    .main section.page2 .credit {
+      color: rgba(255,255,255,0.85);
+      text-align: center;
+      position: relative;
+      top: 25%;
+      margin: 0 auto 0;
+      max-width: 950px;
+      z-index: 3;
+    }
+    .main section.page2 .credit a{
+      color: rgba(255,255,255,0.85);
+    }
+    .main section.page2 > img {
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      margin-left: -1095px;
+    }
+    .main section.page2 .page_container {
+      margin-top: 240px;
+      overflow: hidden;
+    }
+    .main section.page2 h1 {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 15px;
+      font-size: 70px;
+      letter-spacing: -1px;
+      color: white;
+    }
+    .main section.page2 h2 {
+      color: rgba(255,255,255,0.85);
+      text-align: center;
+      line-height: 160%;
+      font-weight: 100;
+    }
+    .main section.page3 {
+      background:url( ) no-repeat 156px -150px ; 
+    }
+    .main section.page3 .page_container {
+      overflow: hidden;
+      width: 500px;
+      right: -285px;
+    }
+    .main section.page3 h1 {
+      text-align: left;
+      padding: 0;
+      margin-bottom: 0;
+      font-size: 70px;
+      letter-spacing: -1px;
+      color: black;
+    }
+    .main section.page3 h2 {
+      color: rgba(0,0,0,0.85);
+      text-align: left;
+      line-height: 160%;
+      font-weight: 100;
+      font-size: 21px;
+      margin-left: 5px;
+    }
+    .main section.page3 > img {
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      margin-left: -60%;
+    }
+    .main section.page3 .credit {
+    	text-align: left;
+    }
+    .main section.page0 {
+      background: #ffffff url(default-hero1.png) no-repeat center 0px; width: 100%;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      color: rgba(255,255,255,0.85);
+    }
+    .main section.page0 .credit {
+      color: rgba(255,255,255,0.85);
+      text-align: center;
+      position: relative;
+      top: 25%;
+      margin: 0 auto 0;
+      z-index: 3;
+    }
+    .main section.page0 .credit a{
+      color: rgba(255,255,255,0.85);
+      font-weight: normal;
+    }
+    .main section.page0 > img {
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      margin-left: -190px;
+    }
+    .main section.page0 .page_container {
+      margin-top: 190px;
+      overflow: hidden;
+    }
+    .main section.page0 h1 {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 15px;
+      font-size: 70px;
+      letter-spacing: -1px;
+      color: rgba(255,255,255,0.85);
+    }
+    .main section.page0 h2 {
+      color: rgba(255,255,255,0.85);
+      text-align: center;
+      line-height: 160%;
+      font-weight: 100;
+    }
+    /* Curtain */
+    .main section.page4 {
+      background: #82200f url(curtain-hero1.png) no-repeat center -150px ;
+      color: rgba(255,255,255,0.85);
+    }
+    .main section.page4 .credit {
+      color: rgba(255,255,255,0.85);
+      text-align: center;
+      position: relative;
+      top: 25%;
+      margin: 0 auto 0;
+      max-width: 950px;
+      z-index: 3;
+    }
+    .main section.page4 .credit a{
+      color: rgba(255,255,255,0.85);
+    }
+    .main section.page4 > img {
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      margin-left: -1095px;
+    }
+    .main section.page4 .page_container {
+      margin-top: 240px;
+      overflow: hidden;
+    }
+    .main section.page4 h1 {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 15px;
+      font-size: 70px;
+      letter-spacing: -1px;
+      color: white;
+    }
+    .main section.page4 h2 {
+      color: rgba(255,255,255,0.85);
+      text-align: center;
+      line-height: 160%;
+      font-weight: 100;
+    }
+    .main section.page5 {
+      background:#151515;
+      color: rgba(255,255,255,0.85);
+    }
+    .main section.page5 h1 {
+      text-align: left;
+      padding: 0;
+      margin-bottom: 15px;
+      font-size: 70px;
+      color: rgba(255,255,255,0.85);
+    }
+    .main section.page5 h2 {
+      color: rgba(255,255,255,0.85);
+      text-align: left;
+      width: 435px;
+      margin-left: 5px;
+      line-height: 160%;
+    }
+   	.main section.page5 > img {
+      position: absolute;
+      top: 50px;
+      right: 50%;
+      margin-right: -50%;
+      width: 58%;
+    }
+    .main section.page5 .credit {
+   	  text-align: left;
+      color: rgba(255,255,255,0.85);
+      background:rgba(0,0,0,0.2)
+    }
+    /* Drive */
+    .main section.page6 {
+      background: #31ab3a url(drive-hero1.png) no-repeat center -100px ;
+      color: rgba(255,255,255,0.85);
+    }
+    .main section.page6 .credit {
+      color: rgba(255,255,255,0.85);
+      text-align: center;
+      position: relative;
+      top: 25%;
+      margin: 0 auto 0;
+      max-width: 950px;
+      z-index: 3;
+    }
+    .main section.page6 .credit a{
+      color: rgba(255,255,255,0.85);
+    }
+    .main section.page6 > img {
+      position: absolute;
+      top: 200px;
+      left: 50%;
+      margin-left: -1095px;
+    }
+    .main section.page6 .page_container {
+      margin-top: 240px;
+      overflow: hidden;
+    }
+    .main section.page6 h1 {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 15px;
+      font-size: 70px;
+      letter-spacing: -1px;
+      color: white;
+    }
+    .main section.page6 h2 {
+      color: rgba(255,255,255,0.85);
+      text-align: center;
+      line-height: 160%;
+      font-weight: 100;
+    }
+    .main section.page7 {
+      background: #ffffff url(end-hero1.png) no-repeat center 0px; width: 100%;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      color: rgba(255,255,255,0.85);
+    }
+    .main section.page7 .credit {
+      color: rgba(255,255,255,0.85);
+      text-align: center;
+      position: relative;
+      top: 25%;
+      margin: 0 auto 0;
+      z-index: 3;
+    }
+    .main section.page7 .credit a{
+      color: rgba(255,255,255,0.85);
+      font-weight: bold;
+    }
+    .main section.page7 > img {
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      margin-left: -100px;
+      margin-top: 130px;
+      opacity: 0.8;
+    }
+    .main section.page7 .page_container {
+      margin-top: 190px;
+      overflow: hidden;
+    }
+    .main section.page7 h1 {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 15px;
+      font-size: 70px;
+      letter-spacing: -1px;
+      color: rgba(255,255,255,0.85);
+    }
+    .main section.page7 h2 {
+      color: rgba(255,255,255,0.85);
+      text-align: center;
+      line-height: 160%;
+      font-weight: 400;
+      font-size: 50px;
+      font-family: "Kaushan Script", "Open Sans", sans;
+    }
+
+    .viewing-page-3 .back{
+      background: rgba(0, 0, 0, 0.25);
+      color: #FFF;
+      }
+    .viewing-page-4 .back{
+      background: rgba(0, 0, 0, 0.25);
+      color: #FFF;
+      }
+    .viewing-page-5 .back{
+      background: rgba(0, 0, 0, 0.25);
+      }
+	.viewing-page-3 .back:hover{
+      background: rgba(0, 0, 0, 0.5);
+      }
+    .viewing-page-4 .back:hover{
+      background: rgba(0, 0, 0, 0.5);
+      }
+    .viewing-page-5 .back:hover{
+      background: rgba(0, 0, 0, 0.5);
+      }
+	</style>
+	<script>
+	  $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section"
+      });
+		});
+		
+	</script>
+</head>
+<body>
+  <div class="wrapper">
+	  <div class="main">
+
+	  <section class="page0">
+	    <div class="page_container">
+          <h1>The Hackathon Project</h1>
+          <h2>I abused my laptop, drank a lot of caffeine, and this is what I have to show for it.</h2>
+          <p class="credit"><a href="http://blog.nathanchau.com/post/63864638909/hackathons-are-brainstorm-take-it-to-the"><b>Hackathons are: </b>brainstorm. take it to the thunderstorm. take it to thunder bay. bring it back to the bay area. feeling the silicon valley vibe. oh shit, 4 degrees to startup nirvana, we’re definitely going to win. “Look at all this free stuff! It’s like (Read more)..</a>.</p>
+	    </div>
+  	    <img src="hackathon-logo1.png" alt="phones">
+      </section>
+	    <section class="page2">
+	      <div class="page_container">
+          <h1>Orange</h1>
+          <h2>Juicy product review goodness based on machine learning. A product of HackMIT.</h2>
+          <p class="credit">Co-conspirators: <a href="http://www.drewmacneil.com">Drew Macneil</a> and <a href="http://www.brianbt.com">Brian To</a>.</p>
+	      </div>
+      </section>
+
+      <section class="page1">
+        <div class="page_container">
+          <h1>Skip the Pulp</h1>
+          <h2>Product reviews done right</h2>
+          <p class="credit">Orange is an automated product review aggregator which automatically and intelligently analyzes reviews and extracts key facts from the things you want to buy from trusted sources and communities. Powered by the AlchemyAPI cloud and available on both iOS and web, Orange enables you to get structured, glanceable information on a product's pros and cons, as well as an overall rating based on aggregate sentiment from online communities and forums. The iOS app even includes a barcode reader, for added convenience and ease of use. So skip the pulp; use Orange and get only the product info you really need.</p>
+  	    </div>
+  	    <img src="orange-detail1.png" alt="phones">
+      </section>
+	    	    
+	  <section class="page4">
+	    <div class="page_container">
+          <h1>Curtain</h1>
+          <h2>Truly social payments. A product of MasterCard N>XT.</h2>
+          <p class="credit">Co-conspirators: <a href="http://www.drewmacneil.com">Drew Macneil</a> and <a href="http://www.brianbt.com">Brian To</a>.</p>
+	    </div>
+      </section>
+
+	    <section class="page3">
+	      <div class="page_container">
+          <h1>Shop Smarter</h1>
+          <h2>More than just a mobile wallet</h2>
+          <p class="credit">Think about the transactions you make in your everyday life: coffees, lunches, etc. Pretty mundane, right? We believe these purchases have extraordinary and unrealized potential with regards to sharing, trends, and offers. Curtain is more than just a mobile wallet. Effortlessly share purchases with your friends, and over time, the app starts to help you. Keep tabs on your spending, get personalized offers, and shop smarter than ever with Curtain.</p>
+  	    </div>
+  	    <img src="curtain-detail1.png" alt="phones">
+      </section>
+
+	  <section class="page6">
+	    <div class="page_container">
+          <h1>Drive</h1>
+          <h2>Next-gen media controls. A product of The Next 36 Hackathon.</h2>
+          <p class="credit">Partner in crime: <a href="http://www.drewmacneil.com">Drew Macneil</a>.</p>
+	    </div>
+      </section>
+
+      <section class="page5">
+        <div class="page_container">
+          <h1>Take Control</h1>
+          <h2>Use ALL the gestures</h2>
+          <p class="credit">Drive is a media player made for the long haul. The UI is completely gesture-driven, allowing for nearly sightless navigation. Instead of fumbling to view your phone's media controls, simply swipe and tap anywhere onscreen. Additionally, when paired with Thalmic Labs' Myo, gesture control is activated, enabling you to control your phone without even touching it. So what are you waiting for? Get Drive and get going.</p>
+  	    </div>
+  	    <img src="drive-detail1.png" alt="phones">
+      </section>
+    <section class="page7">
+      <div class="page_container">
+          <h1>Fin</h1>
+          <h2>Hi, my name's Nathan</h2>
+          <p class="credit">...and you just scrolled through a collection of my hackathon projects. I'm 20, single, and ready to mingle, so to connect with me, visit my <b><a href="http://www.nathanchau.com">website!</a></b></p>
+          <p class="credit">P.s. Tell your friends!</p>
+      </div>
+
+      <img src="http://static.tumblr.com/f5e43e100a0f620fe2036f7f4e993fb7/cx2hxao/4pAmry5nr/tumblr_static_n-logo-2.png" alt="phones">
+      </section>
+
+    </div>
+    <a class="back" href="http://www.nathanchau.com/"> < NATHANCHAU.com</a>
+  </div>
+</body>
+</html>
