@@ -1,0 +1,172 @@
+body {
+	text-align: center;
+    height: 100vh;
+}
+
+@-moz-keyframes light {
+    0% {
+        opacity: 0.05;
+    }
+    30% {
+        opacity: 0.2
+    }
+    80% {
+        opacity: 0.2
+    }
+    100% {
+        opacity: 0.05;
+    }
+}
+@-webkit-keyframes light {
+    0% {
+        opacity: 0.05;
+    }
+    30% {
+        opacity: 0.2
+    }
+    80% {
+        opacity: 0.2
+    }
+    100% {
+        opacity: 0.05;
+    }
+}
+@keyframes light {
+    0% {
+        opacity: 0.05;
+    }
+    30% {
+        opacity: 0.2
+    }
+    80% {
+        opacity: 0.2
+    }
+    100% {
+        opacity: 0.05;
+    }
+}
+
+@-moz-keyframes colour {
+    0% {
+        -moz-filter: hue-rotate(90deg);
+        filter: hue-rotate(90deg);
+    }
+    25% {
+        -moz-filter: hue-rotate(162deg);
+        filter: hue-rotate(162deg);
+    }
+    50% {
+        -moz-filter: hue-rotate(234deg);
+        filter: hue-rotate(234deg);
+    }
+    75% {
+        -moz-filter: hue-rotate(306deg);
+        filter: hue-rotate(306deg);
+    }
+    100% {
+        -moz-filter: hue-rotate(18deg);
+        filter: hue-rotate(18deg);
+    }
+}
+
+@keyframes colour {
+    0% {
+        -moz-filter: hue-rotate(90deg);
+        -webkit-filter: hue-rotate(90deg);
+        filter: hue-rotate(90deg);
+    }
+    25% {
+        -moz-filter: hue-rotate(162deg);
+        -webkit-filter: hue-rotate(162deg);
+        filter: hue-rotate(162deg);
+    }
+    50% {
+        -moz-filter: hue-rotate(234deg);
+        -webkit-filter: hue-rotate(234deg);
+        filter: hue-rotate(234deg);
+    }
+    75% {
+        -moz-filter: hue-rotate(306deg);
+        -webkit-filter: hue-rotate(306deg);
+        filter: hue-rotate(306deg);
+    }
+    100% {
+        -moz-filter: hue-rotate(18deg);
+        -webkit-filter: hue-rotate(18deg);
+        filter: hue-rotate(18deg);
+    }
+}
+
+@-webkit-keyframes colour {
+    0% {
+        -webkit-filter: hue-rotate(90deg);
+        filter: hue-rotate(90deg);
+    }
+    25% {
+        -webkit-filter: hue-rotate(162deg);
+        filter: hue-rotate(162deg);
+    }
+    50% {
+        -webkit-filter: hue-rotate(234deg);
+        filter: hue-rotate(234deg);
+    }
+    75% {
+        -webkit-filter: hue-rotate(306deg);
+        filter: hue-rotate(306deg);
+    }
+    100% {
+        -webkit-filter: hue-rotate(18deg);
+        filter: hue-rotate(18deg);
+    }
+}
+
+
+.background {
+	background-image: url("../assets/circle.png");
+	background-size: contain;
+	background-position: 50% 140%;
+	background-repeat: no-repeat;
+	height: calc(100vh - 40px);
+	width: calc(100vw - 40px);
+    margin: 20px;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: -1000;
+	opacity: 0.05;
+	animation: light 5s linear 2.5s alternate infinite, colour 16s linear 8s alternate infinite;
+	-webkit-animation: light 5s linear 2.5s alternate infinite, colour 16s linear 8s alternate infinite;
+	-moz-animation: light 5s linear 2.5s alternate infinite, colour 16s linear 8s alternate infinite;
+    -webkit-filter: hue-rotate(90deg);
+    filter: hue-rotate(90deg);
+    -moz-filter: hue-rotate(90deg);
+}
+
+.logo {
+	max-width: 225px;
+	margin-bottom: 30px;
+	margin-top: 62vh;
+}
+
+.links-container {
+	max-width: 250px;
+	text-align: center;
+	font-family: "Avenir Next", sans-serif;
+	margin: auto;
+}
+
+.link {
+	margin: 0;
+	padding: 0;
+}
+
+.link:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.link-emoji {
+	margin-top: 5px;
+	width: 32px;
+	height: auto;
+}

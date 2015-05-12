@@ -1,358 +1,67 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="https://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#" xml:lang="en" lang="en">
-<!-- Svbtle Theme for Tumblr by matteoroversi.com -->
-<!-- Modified by Nathan Chau, 2013 -->
-    <head>
-        <meta charset="utf-8" />
-        <meta name="google" content="notranslate" />
-        <meta http-equiv="Content-Language" content="en" />
-        <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta http-equiv="imagetoolbar" content="false" />
-        <!-- Title -->
-        <title>
-            Nathan Chau
-        </title>
-        <!-- Description -->
-        <meta name="description" content="Nathan Chau is a hacker/designer. He is the creator of Tweed- The Twitter Reader, an app for the iPhone." />
-        <!-- Fav and touch icons -->
-        <link rel="shortcut icon" href="/favicon.ico/" />
-        <link rel="apple-touch-icon" href="/favicon.ico/" />
-        <!-- Custom Fonts -->
-        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="http://fonts.googleapis.com/css?family=Cousine:400,700" rel="stylesheet" type="text/css" />
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Nathan Chau is.">
+    <meta name="author" content="Nathan Chau">
 
-        <!-- For Syntax Highlighting -->
-        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css"></link>  
-        <script src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>  
-        <script>
-            function styleCode() {
-                if (typeof disableStyleCode != 'undefined') { return; }
-        
-                var a = false;
-                
-                $('code').each(function() {
-                    if (!$(this).hasClass('prettyprint') && !$(this).hasClass('uglyprint')) {
-                        $(this).addClass('prettyprint');
-                        a = true;
-                    }
-                });
-        
-                if (a) { prettyPrint(); } 
-            }
-    
-            $(function() {styleCode();});
-        </script>
-        <!-- Google Analytics -->
-        <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <title>Nathan Chau</title>
 
-  ga('create', 'UA-45055813-1', 'nathanchau.com');
-  ga('send', 'pageview');
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 
-</script>
-        <!-- CSS -->
-        <style type="text/css">
-            /* General Settings */
-            body {
-                font-family: "Merriweather", sans-serif;
-                font-weight: 400;
-                -webkit-text-size-adjust: 100%;
-                -ms-text-size-adjust: 100%;
-                -webkit-font-smoothing: antialiased;
-                margin: 0 0 0 0;
-            }
-            img, img a {
-                border-style: none;
-                border: 0px;
-                text-decoration: none;
-            }
-            /* Sidebar */
-            #sidebar {
-                width: 300px;
-                min-height: 100%;
-                position: fixed;
-                overflow: hidden;
-                /*ncbackgroundimage*/
-                background-color: #1a1111;
-                /*background-image: url("http://farm3.staticflickr.com/2891/8991584821_d8b28ec6ba_b.jpg");
-                background-size: 200%;*/
-            }
-            #sidebar .logo .img {
-                width: 140px;
-                height: 140px;
-                display: block;
-                margin-top: 30px;
-                margin-left: 65px;
-                background-image: url("http://static.tumblr.com/f5e43e100a0f620fe2036f7f4e993fb7/cx2hxao/4pAmry5nr/tumblr_static_n-logo-2.png");
-                background-size: 140px 140px;
-                background-repeat: no-repeat;
-        		background-color:transparent;
-    			background-position:center center;
-    			opacity: 0.8; /* CHANGE!!!!!!!!!!!!!!!!!!!!!!! - have to change colours eventually */
-            }
-            #sidebar .logo h1 {
-                text-transform: uppercase;
-                font-family: "Montserrat", sans-serif;
-                /*font-family: "Helvetica Neue", Arial, sans-serif;*/
-                letter-spacing: -2px;
-                font-size: 28px;
-                margin-left: 40px;
-                margin-right: 30px;
-                margin-bottom: 5px;
-                margin-top: 19px;
-                color: #c4c2c2;
-            }
-            #sidebar .logo a {
-                text-decoration: none;
-            }
-            #sidebar .logo h1:hover {
-                -webkit-transition: all 0.25s ease;
-                -moz-transition: all 0.25s ease;
-                -ms-transition: all 0.25s ease;
-                -o-transition: all 0.25s ease;
-                transition: all 0.25s ease;
-                color: #3d8eb2;
-            }
-            #sidebar .description {
-                font-family: "Helvetica Neue", Arial, sans-serif;
-                font-size: 15px;
-                line-height: 24px;
-                margin-left: 40px;
-                margin-right: 30px;
-                margin-top: 0px;
-                color: #c4c2c2;
-            }
-            #sidebar .description a, #sidebar .description a:visited {
-                text-decoration: none;
-                font-weight: 600;
-                color: #3d8eb2;
-            }
-            #sidebar .description a:hover {
-                -webkit-transition: all 0.5s ease;
-                -moz-transition: all 0.5s ease;
-                -ms-transition: all 0.5s ease;
-                -o-transition: all 0.5s ease;
-                transition: all 0.5s ease;
-                color: #fff;
-                background-color: #3d8eb2;
-            }
-            #sidebar .navigation {
-                display: block;
-                clear:both;
-                width: 50%;
-                margin-top: 10px;
-            }
-            #sidebar .navigation a {
-                display: inline-block;
-                text-decoration: none;
-                border: 3px solid;
-                border-radius: 30px;
-                border-color: #efefef;
-                /*font-family: "Montserrat", sans-serif;*/
-                font-family: "Helvetica Neue", Arial, sans-serif;
-                font-size: 16px;
-                font-weight: 600;
-                line-height: 14px;
-                padding: 10px;
-                padding-left: 20px;
-                padding-right: 20px;
-                margin-top: 12px;
-                /* cHANGED!! */
-                margin-left: 42px;
-                webkit-border-radius: 30px;
-                moz-border-radius: 30px;
-                color: #c4c2c2;
-            }
-            #sidebar .navigation a:hover {
-                -webkit-transition: all 0.25s ease;
-                -moz-transition: all 0.25s ease;
-                -ms-transition: all 0.25s ease;
-                -o-transition: all 0.25s ease;
-                transition: all 0.25s ease;
-                color: #3d8eb2;
-                border-color: #3d8eb2;
-            }
-            /* Main Content */
-            #content-wrapper {
-                margin-left: 300px;
-                color: #333;
-            }
+    <!-- Custom styles -->
+    <link rel="stylesheet" type="text/css" href="./css/base.css">
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+      ga('create', 'UA-45055813-1', 'nathanchau.com');
+      ga('send', 'pageview');
 
-            /* Start of Media Queries */
-            /* Tablets (Portrait) ----------- */
-            @media only screen and (max-width: 800px) {
-                #sidebar {
-                    display: block;
-                	height: auto;
-                	margin: 0;
-                	padding: 0;
-                    padding-bottom: 40px;
-                	position: relative;
-                	text-align: center;
-                	width: auto;
-                }
-                #sidebar .logo .img {
-                	margin-left: 0px;
-                    margin: 20px auto;
-                }
-                #sidebar .logo h1 {
-                	margin-left: 6%;
-                	margin-right: 6%;
-                    margin-top: 18px;
-                }
-                #sidebar .description {
-                	margin-left: 6%;
-                	margin-right: 6%;
-                }
-                #sidebar .navigation {
-                	display: inline-block;
-                    width: 100%;
-                }
-                #sidebar .navigation a {
-                	margin-left: 2px;
-                    margin-right: 2px;
-                }
-                #main {
-                    margin-left: 0px;
-                    margin-right: 0px;
-                    border-left: none;
-                    min-height: auto;
-                }
-                #content-wrapper {
-                    margin-left: 0px;
-                    margin-right: 0px;
-                    min-height: auto;
-                    text-align: center;
+    </script>
+  </head>
 
-                }
-                #date a, #date a:visited {
-                    margin-left: 6%;
-                }
-                #post {
-                	margin-left: 6%;
-                    margin-right: 6%;
-                    max-width: 768px;
-                }
-                .social_links {
-                margin-left: 6%;
-                }
-                #postfooter a, #postfooter a:visited {
-                	margin-left: 6%;
-                }
-                #disqus_thread {
-                    margin-left: 6%;
-                    margin-right: 6%;
-                    max-width: 768px;
-                }
-                #pagination .next {
-                	margin-right: 6%;
-                }
-                #pagination .prev {
-                	margin-left: 6%;
-                }
-            }
-            /* Tablets (Landscape) ----------- */
-            @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-                #sidebar {
-                    position: absolute;
-                }
-            }
-            /* Retina Displays ----------- */ 
-            @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-                #sidebar .logo .img {
-                    background-image: url("http://static.tumblr.com/551c72cdeca6fbaa2f9a78b1c306f2ef/cx2hxao/vfxmry5ny/tumblr_static_n-logo-2_2x.png");
-                }
-            }
-            * {
-                background-color: #1a1111;
-            }
-        </style>
+  <body>
 
-        <!-- Hacky CSS addition for the monospace table :| -->
-        <link rel="stylesheet" href="lib/css/style.css">
+    <div class="container">
 
-    </head>
-    <body>        
-        <!-- Sidebar
-        ---------------------------------->
-        <div id="sidebar">
-            <!-- Logo -->
-            <div class="logo">
-                <a href="http://nathanchau.com">
-                    <span class="img"></span>
-                </a>
-                <a href="http://nathanchau.com">
-                    <h1>NATHAN CHAU</h1>
-			    </a>
-            </div>
-            <!-- Description -->
-            <div class="description">
-                <!--DESCRIPTION GOES HERE-->
-            </div>
-        </div>
-        <!-- Main Content
-        ---------------------------------->
-      <div id="content-wrapper">
-        <div id="content-left">
-          <div id="title">
-            <br />
-            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br />
-            XX <span class="white">NATHAN CHAU // CODE, DESIGN, DREAM</span> XX
-
-            <div id="content">
-              ========================================<br />
-              <span class="grey">--</span> <span class="orange">WORK</span> <span class="grey">-------------------------------- </span>
-
-                <br />
-                ----------------------------------------<br />
-              <div id="about-content" class="nodisplay">
-                <br />
-                XX <a href="http://blog.nathanchau.com"><span class=
-                "blue">BLOG</span></a> XX<br />
-                <br />
-                <!--XX <a href="http://www.tweedapp.com"><span class="blue">iOS</span></a> XX<br />
-                <br /> -->
-                XX <a href=
-                "http://www.dribbble.com/nathanistic"><span class="blue">
-                DRIBBBLE</span></a> XX<br />
-                <br />
-                XX <a href=
-                "http://www.instagram.com/nathanistic"><span class="blue">
-                INSTAGRAM</span></a> XX<br />
-                <br />
-                XX <a href=
-                "http://www.soundcloud.com/frieze"><span class="blue">
-                MUSIC</span></a> XX<br />
-                <br />
-                XX <a href="/hackathon/"><span class="blue">HACKATHONS</span></a> XX<br />
-                <br />
-              </div>
-            </div>
-          </div>========================================<br />
-
-          <span class="grey">--</span> <span class="orange">CONTACT</span> <span class="grey">----------------------------- </span>
-
-          <br />
-            ----------------------------------------<br />
-          <div id="about-content" class="nodisplay">
-            <br />
-            XX <a href="mailto:iamnathanchau@gmail.com"><span class="blue">EMAIL</span></a>
-            XX<br />
-            <br />
-            XX <a href="https://twitter.com/nathanistic"><span class=
-            "blue">TWITTER</span></a> XX<br />
-            <br />
-          </div>========================================<br />
-        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
-        <br />
-        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+      <div class="background">
       </div>
-    </body>
-</html>
+
+      <img class="logo" src="./assets/self_logo.png">
+      <div class="links-container">
+        <a class="link col-xs-3">
+          Work
+          <img class="link-emoji" src="./assets/emojis/vulcan.png">
+        </a>
+        <a class="link col-xs-3" href="http://soundcloud.com/frieze">
+          Music
+          <img class="link-emoji" src="./assets/emojis/clap.png">
+        </a>
+        <a class="link col-xs-3" href="mailto:iamnathanchau@gmail.com">
+          Email
+          <img class="link-emoji" src="./assets/emojis/wave.png">
+        </a>
+        <a class="link col-xs-3" href="http://twitter.com/nathanistic">
+          Twitter
+          <img class="link-emoji" src="./assets/emojis/bird.png">
+        </a>
+      </div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  
+
+</body></html>
