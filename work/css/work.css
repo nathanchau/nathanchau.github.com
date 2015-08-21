@@ -69,12 +69,12 @@
 .project-description {
 	color: black;
 	text-align: left;
-	font-family: "Avenir Next", "Muli", serif;
+	font-family: "Avenir Next", sans-serif;
 	opacity: 0.85;
 }
 
 .project-description a {
-	text-decoration: none;
+	font-weight: 500;
 }
 
 .project-description h1 {
