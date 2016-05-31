@@ -1,6 +1,6 @@
 body {
-	text-align: center;
-    height: 100vh;
+	text-align: left;
+    /*height: 100vh;*/
 }
 
 @-moz-keyframes light {
@@ -143,9 +143,14 @@ body {
 }
 
 .logo {
-	max-width: 225px;
-	margin-bottom: 30px;
-	margin-top: 62vh;
+	max-width: 150px;
+	margin-bottom: 50px;
+	margin-top: 20px;
+}
+
+.container {
+    text-align: center;
+    max-width: 420px;
 }
 
 .links-container {
@@ -170,4 +175,23 @@ body {
 	margin-top: 5px;
 	width: 32px;
 	height: auto;
+}
+
+.sentence-container {
+    display: inline-block;
+    margin-top: 100px;
+    text-align: left;
+    max-width: 400px;
+    font-family: "Karla", sans-serif;
+    font-size: 20px;
+    letter-spacing: -0.15px;
+}
+
+.sentence-container a {
+    font-weight: 700;
+}
+
+.sentence-emoji {
+    width: 32px;
+    height: auto;
 }
