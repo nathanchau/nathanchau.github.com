@@ -1,0 +1,161 @@
+.container {
+	max-width: 640px;
+}
+
+.navbar {
+	width: 100%;
+	text-align: left;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: black;
+}
+
+.navbar-image {
+	height: 35px;
+	width: auto;
+	margin-top: 20px;
+}
+
+.navbar-description {
+	font-family: "Avenir Next", sans-serif;
+	font-weight: 500;
+	margin: 0;
+	left: -15px;
+	top: 28px;
+	position: relative;
+}
+
+.content {
+	margin-top: 70px;
+	margin-right: 10px;
+}
+
+.intro {
+	font-family: "Karla", sans-serif;
+	font-size: 18px;
+	opacity: 0.85;
+	letter-spacing: -0.15px;
+	text-align: left;
+	color: black;
+
+	margin-top: 22vh;
+	margin-bottom: 60px;
+}
+
+.intro h1 {
+	margin-top: 0px;
+	padding-top: 0px;
+	font-weight: 700;
+	font-size: 24pt;
+}
+
+.outro {
+	font-family: "Karla", sans-serif;
+	font-size: 16px;
+	letter-spacing: -0.15px;
+	text-align: left;
+	color: #555555;
+
+	margin-top: 100px;
+	margin-bottom: 30px;
+}
+
+.outro a {
+	font-weight: 700;
+}
+
+.outro-image {
+	height: 35px;
+	width: auto;
+	margin-top: 10px;
+}
+
+.project {
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+
+.project-image {
+	width: 100%;
+	height: auto;
+	margin-bottom: 3px;
+}
+
+.project-description {
+	color: black;
+	text-align: left;
+	font-family: "Karla", sans-serif;
+	font-size: 18px;
+	opacity: 0.85;
+	letter-spacing: -0.15px;
+}
+
+.project-description a {
+	font-weight: 700;
+}
+
+.project-description h1 {
+	margin-top: 0px;
+	padding-top: 0px;
+	font-weight: 700;
+	font-size: 22pt;
+}
+
+.project-description p {
+}
+
+.caption {
+	font-family: "Karla", sans-serif;
+	letter-spacing: -0.15px;
+	text-align: left;
+	font-size: 14px;
+	color: #555555;
+	margin-bottom: 10px;
+}
+
+@media (max-width: 991px) {
+	.project-description {
+		text-align: left;
+	}
+
+	.project-description h1 {
+		margin-top: 20px;
+	}
+}
+
+.gfyitem {
+	width: 100%;
+}
+
+.nopaddingleft {
+	padding-left: 2px !important;
+}
+
+.nopaddingright {
+	padding-right: 2px !important;
+}
+
+.strikethrough {
+	text-decoration: line-through;
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 0px;
+	height: 0;
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
