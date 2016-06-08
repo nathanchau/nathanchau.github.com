@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="A collection of Nathan Chau's work for in VR.">
+    <meta name="author" content="Nathan Chau">
+
+    <title>VR | Nathan Chau</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="./css/vr.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="navbar">
+        <a href="http://nathanchau.com">
+          <img class="navbar-image" src="../assets/self_logo.png">
+        </a>
+      </div>
+
+      <div class="content">
+
+        <div class="intro">
+          <h1>My Work in VR</h1>
+          <p>Over the past year I’ve been building different projects to solve emerging problems in virtual reality (VR). VR is really interesting to me because of what it means for human-computer interaction. I believe that our relationship with computers is going to shift over the next few years, with that shift being driven by the different forms that computing takes. VR and AR are making computing more and more immersive - instead of being trapped inside of boxes, computing is spreading to the environment around us, enabling new interactions with both our world, and virtual worlds. With my work, I wanted to answer two key questions: </p>
+          <p>1. How will we create content for VR, and </p>
+          <p>2. How will we interact with VR content?</p>
+        </div>
+
+        <div class="project">
+          <div class="project-description">
+            <h1>Freehand</h1>
+            <p>The project I spent most of my time on this year was Freehand, a company that I co-founded with <a href="http://www.philisaac.com">Phil</a>. Freehand is a tactile interface for VR that lets you touch and manipulate virtual objects as if they were in the room with you. User interfaces in VR are an exciting but unsolved problem, and we think that the best ones will both work and feel like real physical objects.</p>
+            <img class="gfyitem" data-autoplay=false data-expand=true data-id="DigitalSmoothIraniangroundjay" />   
+            <div class="caption">Our first prototype in use. On the right, Phil interacts with the robotic arm; on the left is what Phil is seeing through the headset</div>           
+            <p>Freehand works by tracking your hands in virtual space, and, using a pair of robotic arms, one for each hand, simulates the object that you’re holding. It emulates the shape, position, and force exerted by the virtual object. Our first prototype is a custom robotic arm that can simulate a single rigid body. It’s paired with an Oculus Rift, Leap Motion, and a simple demo in Unity where users can grab and manipulate simple shapes in virtual reality. It’s a bit rough around the edges, but we’ve been constrained by money - so far we’ve spent around $700. I led the development of the demo in Unity, as well as the development of systems for robot control on Arduino.</p>
+            <br>
+            <p>We’re building Freehand because it’s the way that we want to be able to interact with VR. The first time that anyone puts on a VR headset, their first instinct is to reach out and grab the objects they see. When you’re immersed in a virtual environment, it’s natural to want to interact with the objects you see, and right now you can’t.</p>
+            <br>
+            <p>Current input schemes for VR don’t provide relevant physical feedback. We think a user interface that allows you to touch and manipulate virtual objects as if they were real, physical objects will: 1. Increase immersion, VR’s killer feature, and 2. Increase the bandwidth of human-computer interaction, making VR more productive than existing computing schemes.</p>
+            <p>There are currently 3 major strategies for input in VR:</p>
+            <p>1. Traditional input schemes (keyboard and mouse, gaming controllers)</p>
+            <p>2. Waving hands in the air (Leap Motion, Myo)</p>
+            <p>3. Motion-tracked controllers (HTC/Vive Lighthouse, Oculus Touch, Razer Hydra)</p>
+            <p>All of these strategies have the same problem - there’s a lack of relevant physical feedback. Our hands are remarkable for two simple reasons - they can feel things, and they can manipulate things; this gives us a physical understanding of the world. For example, if you pick up a water bottle to take a sip, as soon as you pick it up you instantly know: 1. how full it is, 2. how far you’ll have to tilt it, and 3. how fast the water will come out.</p>
+            <p>To drink water with current input schemes, you either: 1. Press a button, 2. Raise your hand to your face, or 3. Press a button while raising your hand to your face. Maybe if you’re lucky the controller will vibrate when you drink.</p>
+            <p>Freehand fixes this by simulating the physical feeling of the object you’re touching - the most relevant feedback possible. </p>
+            <br>
+            <p>We're currently seeking pre-seed funding to build out our next prototype. Having built our first prototype, we're confident in our technical direction and the feasibility of our approach, and now we need to build a higher-fidelity, consumer-ready version. If this sounds like an opportunity that you might be interested in, <a href="mailto:iamnathanchau@gmail.com">let's talk</a>. </p>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-description">
+            <h1>Make</h1>
+            <p>Before working on Freehand, I started off by building a 3D creation tool based on voxels - initially I thought this would be a good way to create in virtual reality. If you’re not sure what voxels are, think of Minecraft - it’s probably the most prominent use of the lego-like cubes that distinguish voxel engines. The idea of using voxels was especially interesting to me because I thought that it would be both simple enough to sketch out ideas in 3D, and good enough for a prototype - this was important because I felt one of the biggest gaps in creating 3D content was at the prototype stage, somewhere between 2D ideas and 3D implementations. In addition, I thought that the idea of building with blocks would really force you to think in 3 dimensions.</p>
+            <p>This was a great start to learning about Unity in particular - it was my first project using the game engine. Unity is pretty interesting to me - it’s super powerful, and obviously some people have achieved incredible results with it, but there are some quirks I don’t understand (why don’t nested prefabs work?).</p>
+            <p>Here are a couple of the features I implemented:</p>
+            <img class="gfyitem" data-autoplay=false data-expand=true data-id="QualifiedThoughtfulAlleycat" />   
+            <div class="caption">The free paint tool</div>
+            <p>Blocks can be placed using two different tools: the free paint tool, and the pen tool. </p>
+            <p><strong>The free paint tool</strong> lets you either click to place individual blocks, or click and drag to paint multiple blocks along a guide plane. I borrowed the guide plane idea from Tilt Brush - without the use of a 3D input device, the guide plane lets you translate 2D intentions into 3D. Tilt Brush has since removed the guide plane since they’re using the Vive’s lighthouse controllers, something that I would love to do as well. </p>
+            <br>
+            <img class="gfyitem" data-autoplay=false data-expand=true data-id="ImpassionedGleefulHamster" />   
+            <div class="caption">The pen tool</div>
+            <p><strong>The pen tool</strong> offers a way to quickly place blocks in geometric configurations. It works by placing vertices one-by-one, drawing lines between the vertices, and shading the shape that’s created, similar to how the pen tool works in Adobe Illustrator. For 3D shapes, there were a couple of ways I could have approached the construction of shapes from vertices; I ended up using a method that extruded between 2D shapes on planes. Basically, sets of vertices are split up across planes, then Make extrudes between the 2D shapes on the planes. It might sound complicated, but I find it makes a lot of sense in practice.</p>
+            <br>
+            <img class="gfyitem" data-autoplay=false data-expand=true data-id="IndolentBoldIvorybilledwoodpecker" />   
+            <div class="caption">The select tool</div>
+            <p><strong>The select tool</strong> lets you reposition vertices or entire objects by clicking and dragging.</p>
+            <br>
+            <img class="gfyitem" data-autoplay=false data-expand=true data-id="ElaborateNippyCob" />   
+            <div class="caption">The inspector</div>
+            <p><strong>The inspector</strong> surfaces different properties of whichever shape is currently in focus, allowing users to edit shapes programmatically. Currently, it just shows the list of vertices that make up a shape.</p>
+            <br>
+            <p>Something that I found interesting was a lot of the math for filling in discrete lines and planes in 3D. I didn’t know much about graphics programming before I started this project, and as a result, I’m quite sure I unknowingly re-implemented some core graphics algorithms. Turns out voxel math works a lot like pixel math in terms of shading.</p>
+            <p>I eventually stopped working on Make to focus on some other projects. I think it could be improved if instead of building it on a voxel framework, I changed it to be a sort of 3D vector-based creation tool. There’s nothing really equivalent to Illustrator in 3D as far as I can tell, and I think you could create some super interesting 3D shapes with it. It would lend itself especially well to Escher-esque art, the sort of sculpture you see in games like <a href="http://manifold.garden/">Manifold Garden</a>. If you're looking for a good voxel editor, I'd recommend <a href="https://ephtracy.github.io/">MagicaVoxel</a> - I recently discovered it and it's pretty amazing.</p>
+            <p>
+            </p>
+
+          </div>
+            <!--<img class="gfyitem" data-autoplay=false data-expand=true data-id="ClearBlueBlueshark" />-->              
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-description">
+            <h1>Storyboard</h1>
+            <p>I also did some work on the next part of the prototyping problem - interaction. The idea behind Storyboard was to create a 3D interaction prototyping tool, something similar to Marvel, Origami, Framer, etc, but for 3D interactions. Ideally it would allow artists and storytellers, mostly non-technical, to communicate their ideas in 3D to people who were implementing the ideas. I wanted to make Storyboard as simple as possible - I thought it would be really cool if anyone could take a couple 3D models, drop them into the program, and quickly build an interactive scene.</p>
+            <img class="gfyitem" data-autoplay=false data-expand=true data-id="ConsiderateMisguidedAntelopegroundsquirrel" />   
+            <div class="caption">The editor is where I started work on Storyboard before getting caught up with Freehand. Interactions are specified using a trigger-action pair on an object</div>           
+            <p>I borrowed a lot of ideas from 2D prototyping tools - in fact, the overarching framework remained the same. The idea was that you would have different scenes, different actions could be taken using a trigger-based system, and these actions would transition you to another state or scene. For example, a basic interaction could have left clicking over an object as the trigger, picking up the object as the action, and the new state would have the character holding the object. It boiled down to a fairly complex state machine, which seemed reasonable.</p>
+            <p>However, these state machines got messy pretty quickly - I’m not sure the best way to solve this is. I thought about managing the complexity by encapsulating different interactions, having layers that you could hide and reveal, but I’m not sure that’s the best way. I have a feeling that a state-based approach to this kind of interaction may be flawed - I think a big reason for that is just the nature of 3D experiences. In VR especially, a lot of the immersion and wonder comes from the scene around you - it’s not a focused experience like an app is. </p>
+            <br>
+            <p>I didn’t get too far with this project, as you can probably tell; most of my ideas never left the whiteboard stage. Phil and I started working on Freehand right after I started working on it, and that started eating a lot of my time. There are a lot of ideas that I haven’t had the chance to test yet, and I’m definitely excited to continue working on this in the future. </p>
+            <p>
+            </p>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-description">
+            <p><strong>I've got a couple more ideas I'd like to work on in VR</strong> - I feel like there's a ton of room for exploration right now. After working in the space for a year, I'm confident in saying that I'm even more excited about the future of computers and our relationship with them. If you found any of this work exciting, <a href="mailto:iamnathanchau@gmail.com">we should definitely talk</a>!</p>
+          </div>
+        </div>
+
+        <div class="outro">
+          <p>Hey, my name's Nathan, and I make things. If you enjoyed reading about my work in VR, check out <a href="http://nathanchau.com/iOS">some of the things I've built for iOS</a>.</p>
+          <img class="outro-image" src="../assets/self_logo.png">
+        </div>
+
+      </div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type"text/javascript" src="http://test.gfycat.com/gfycat_test_june25.js"></script>
+
+
+</body></html>
