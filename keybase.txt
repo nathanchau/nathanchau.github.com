@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/nathanchau
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://nathanchau.com
+  * I am nathanchau (https://keybase.io/nathanchau) on keybase.
+  * I have a public key with fingerprint C006 1E18 AC0D 6AA5 B4C3  EA57 7B79 F5EA CDE9 BE08
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012095de661b27b1238e22411acfa58f7fb7bcea2c415819f18b6f4114988e6341430a",
+      "fingerprint": "c0061e18ac0d6aa5b4c3ea577b79f5eacde9be08",
+      "host": "keybase.io",
+      "key_id": "7b79f5eacde9be08",
+      "kid": "0101d26278c07c06924f4724402453fb541a89d2533040f75d8784661e86d735d8d60a",
+      "uid": "6528e75bffe5321aeeb9bbdf2c46c219",
+      "username": "nathanchau"
+    },
+    "service": {
+      "hostname": "nathanchau.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1510887034,
+  "expire_in": 157680000,
+  "prev": "dcbdfaa791b8629246e61961afc54f1f948745e9825143f21164f656376a03fe",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMNwAnicbVJ7UFRVHF4eFoIaSe6A8qirmA9c7rn33NdmpCGJMFIzjeGgud3HuewN
+2F32AfJyTEvSHHVcYECMBl3UZKhBxRliSnmYDIQvgnEMFkXGIqKaHJGB0M4y+Ved
+f878zvm+73zf7/w65gfogv2KCh792jP6XZBfd+sxly5jQVphESFZlQLCWERkodkN
+ZSvI4TRlaQphJEhAkQKjIJYFEsVJgKJ5RFEQAFFWRYZXOVXiJBmJlAwBwwNBBbzE
+qvgeCjyPWBoCSJMiEUeomiUT2W12zeLEsjJJsgABXpRJhRVFRoIyjUSG4yROUBkk
+ygoSJETymGi2OnwMbE4SHcigWfEZLkyz9v4H/8w3CRSKpTheJjmZZAUKqpCjICQp
+yNCqxEAg8oJCMTRNQlLlGIXneIhTIp5VOBqXCjvr2zUrxzIUjzhGUlXE0BQQEZIE
+SVJUHJuVKSD4gA5kt4g5CKMtotMsWmSz6CJK4gh8nqfJyNdaX5b/YAyyNQfzbXar
+0ypbs/Gd2em0GX1UZ4HNh81HkulfFZOkWRTcSkzIQ3aHZrUQRoCRslPzyQIGkDzP
+kTSMI9BOm2ZHJs2HYDiWJ/HyPYPysKQiY/eiyAlA4lkKd4dFLBBYIKoyA1WgCpDn
+IIMEnmLwD6oUACxUWYalOVYkaRURvly5Fith5LBNMRNLOrRMHMplR0RJW+v2QJ1f
+sO65Of6+EdMFzw19Nnh7O0J1XRPw4fJJ12lj/2TqmmoqHm2m/wofqn+lR9txZ6o4
+WB6LIueZOsrUN8SIqsi5T4taMh/sK3x+6ZM7dxsD7q/4YO01vwMhDu8xpyFmYMP+
+qICWjsnXl0TsSxoM+zjWm7LyhzOpmy+H3Kh1x478ssRt4xd2Bb4fV3tuzH1piq7J
+90amH3/r0Iltxfqhg+l7Io+e3XT/3bRvPhrtTq0pWV3XG5vbv37Vp409pvQMqDM/
++nZ+lrf98u21xF6d7W60xf/L1VHm3jXmhhvp+SdWLTb+oTc22J2WccdDz6ldi1If
+K2Xxk9Vbr44lGlrKntQry7JDPyeb1Isp4xnlzcnto0nzfr7ZV9Fbn3M8Ozno/Fhg
+RvieJKi7t/t0Q0506xdOvvzo4emv6gfzH4TMXO+u2vBjUNqA5ln2ouHCrdKT661h
+fakx7c1JF9Inb1Z6Jhpc5WEHUk6Kw7nVcFdC+aIj3t5E20jLgnd++myK1Bd8fX1H
+1tZtv9eYO90RKZfuTdjrmz88lFjhGdxoiPmtNroypnFLaUXdlPXvq/rqOUd26sJf
+vfhmTU1bN7e/ajvjaRt/+zxZDMdGzvG59HD/0IqXDiO2VLdl3UCgQyH+9Oibvo/f
+tPRK07WD06f6hguzO5eHd3m76gLHN86899oLlVcsT0OTb0079LWRCSsXJ4zNnDm7
+8OW025Xux+7dn1D+nf8AyznCRw==
+=5iPv
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/nathanchau
+
+==================================================================
