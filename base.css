@@ -1,0 +1,41 @@
+body {
+    background-image: url(./loading.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(32, 30, 30);
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+}
+
+.loading {
+    max-width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.logo {
+    margin-top: 10px;
+    padding-left: 170px;
+    max-width: 120px;
+    opacity: 0.12;
+    filter: invert(100%);
+    transform: rotate(-2deg);
+}
+
+.description {
+    margin-top: 30%;
+    font-family: 'Work Sans', sans-serif;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.description a {
+    text-decoration: None;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.description a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
